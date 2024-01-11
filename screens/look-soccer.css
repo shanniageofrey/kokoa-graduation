@@ -1,0 +1,90 @@
+.player-search {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  height: 42px;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.5;
+  padding: 0px 20px;
+  margin: 10px;
+}
+.player__title1 img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+
+.player-component-1 {
+  display: block;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 10px;
+  font-size: 19px;
+}
+
+.player-button .btn2,
+.player-button .btn3,
+.player-button .btn4 {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.player__title1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(207, 139, 139);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  width: 150px;
+}
+.player__text {
+  height: 50px;
+}
+
+.stats {
+  margin-bottom: 5px;
+}
+
+.active {
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
+}
+
+@keyframes blink {
+  25%,
+  75% {
+    color: transparent;
+  }
+  40%,
+  60% {
+    color: #fff;
+  }
+}
+
+.button-jittery .active {
+  animation: jittery 4s infinite;
+  &:hover {
+    animation: heartbeat 3s infinite;
+  }
+}
+
+@keyframes heartbeat {
+  50% {
+    transform: scale(0.9);
+  }
+}

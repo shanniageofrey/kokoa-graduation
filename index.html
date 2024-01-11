@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my Kokoa Hobbies</title>
+  </head>
+  <body>
+    <div class="wrapper-kokoa">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>Connected</span>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-brands fa-pinterest fa-lg"></i>
+          <i class="fa-brands fa-whatsapp fa-lg"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>11:26</span>
+        </div>
+        <div class="status-bar__column">
+          <span>99%</span>
+          <i class="fa-solid fa-battery-full fa-lg"></i>
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+      </div>
+      <header class="welcome-header">
+        <h1 class="welcome-header__title">Get Started</h1>
+        <p class="welcome-header__text">
+          Already have an a account? <a href="#">Log In</a>
+        </p>
+      </header>
+      <form action="./buddies.html" method="get" id="sign-up-form">
+        <!--action attribute in a form describes whr the data is sent and method(get) is for sending using url-->
+        <input name="name" type="text" placeholder="Name" />
+        <input name="username" type="text" placeholder="Email or Phone number"/>
+        <input name="country" type="text" placeholder="Country" />
+        <input type="submit" value="Sign Up" />
+        <a href="#">By signing up you agree to terms of services.</a>
+      </form>
+    </div>
+    <script src="https://kit.fontawesome.com/a851e0b457.js"></script>
+  </body>
+</html>

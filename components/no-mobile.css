@@ -1,0 +1,18 @@
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 150vh;
+    width: 100vw;
+    background-color: pink;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+@media screen and (max-width:690px) { /*if its less than 645px width the  it wont display no-mobile */
+    #no-mobile {
+        display: none;
+    }
+}   
